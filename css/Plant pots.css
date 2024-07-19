@@ -1,0 +1,259 @@
+.home__void {
+  margin-top: 60px;
+}
+@media (max-width: 642px) {
+  .home__void .void__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.home__void .void__left h1 {
+  padding-top: 60px;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44.8px;
+  color: white;
+  text-align: left;
+  max-width: 513px;
+  padding-bottom: 41px;
+}
+@media (max-width: 667px) {
+  .home__void .void__left h1 {
+    padding-bottom: 0px;
+  }
+}
+.home__void .void__left button {
+  padding: 16px 32px;
+  margin-bottom: 196px;
+  background: rgba(249, 249, 249, 0.15);
+  border: none;
+  color: white;
+}
+@media (max-width: 867px) {
+  .home__void .void__left button {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 667px) {
+  .home__void .void__left button {
+    margin-bottom: 0px;
+    padding: 16px 100px;
+    transform: translateY(180px);
+  }
+}
+@media (max-width: 420px) {
+  .home__void .void__left button {
+    padding: 16px 60px;
+    transform: translateY(230px);
+  }
+}
+.home__void .void__left p {
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: white;
+  max-width: 602px;
+  text-align: left;
+}
+@media (max-width: 667px) {
+  .home__void .void__left p {
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 1145px) {
+  .home__void .void__right {
+    width: 490px;
+  }
+}
+@media (max-width: 867px) {
+  .home__void .void__right {
+    width: 300px;
+  }
+}
+@media (max-width: 667px) {
+  .home__void .void__right {
+    display: none;
+  }
+}
+
+.catd-hand {
+  font-family: Clash display;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  color: black;
+  padding-top: 120px;
+  padding-bottom: 51px;
+  text-align: center;
+}
+
+.card-body h1 {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-family: Clash Display;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: black;
+  text-align: left;
+}
+.card-body p {
+  font-family: Clash display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+}
+
+.img-siize {
+  width: 100%;
+}
+
+.voidd-S {
+  margin-top: 80px;
+  margin-bottom: 33px;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39.36px;
+  color: black;
+  text-align: left;
+}
+
+.ROW__H1 {
+  padding-top: 58px;
+  padding-bottom: 64px;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  text-align: center;
+}
+
+.Sign__up h2 {
+  padding-top: 120px;
+  padding-bottom: 16px;
+  font-family: Clash Display;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50.4px;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+}
+.Sign__up p {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  text-align: center;
+  max-width: 470px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+.Sign__up form {
+  text-align: center;
+  margin-bottom: 119px;
+}
+.Sign__up form input {
+  width: 354px;
+  height: 56px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(244, 242, 242);
+}
+@media (max-width: 400px) {
+  .Sign__up form input {
+    width: 200px;
+  }
+}
+.Sign__up form button {
+  transition: 0.3s;
+  padding: 16px 32px;
+  border: none;
+  background: rgb(42, 37, 75);
+  color: white;
+}
+.Sign__up form button:hover {
+  background-color: red;
+  box-shadow: 0px 0px 10px 1px black;
+  border-radius: 20px;
+  animation-name: but;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+@keyframes but {
+  0% {
+    background-color: red;
+    box-shadow: 0px 0px 10px 1px red;
+  }
+  50% {
+    background-color: blue;
+    box-shadow: 0px 0px 10px 1px blue;
+  }
+  100% {
+    background-color: red;
+    box-shadow: 0px 0px 10px 1px red;
+  }
+}
+
+@media (max-width: 991px) {
+  .fotoer-sraterere {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.fotoer-sraterere h4 {
+  font-family: Clash Display;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  color: black;
+  max-width: 514px;
+  text-align: left;
+  padding-bottom: 25px;
+}
+.fotoer-sraterere p {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: black;
+  max-width: 536px;
+  text-align: left;
+}
+.fotoer-sraterere img {
+  width: 520px;
+}
+@media (max-width: 768px) {
+  .fotoer-sraterere img {
+    width: 100%;
+  }
+}
+
+.v_-_-_-_-_i h5 {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  font-family: Clash Display;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: black;
+  text-align: left;
+}
+
+.big-boxff {
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44.8px;
+  color: black;
+  text-align: left;
+}
