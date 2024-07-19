@@ -1,0 +1,36 @@
+// @use "../sass/base/reset";
+// @use "../sass/base/typography";
+
+// @use "../sass/components/buttons";
+// @use "../sass/components/carousel";
+// @use "../sass/components/cover";
+// @use "../sass/components/dropdown";
+
+// @use "../sass/layout/footer";
+// @use "../sass/layout/forms";
+// @use "../sass/layout/grid";
+// @use "../sass/layout/header";
+// @use "../sass/layout/navigation";
+// @use "../sass/layout/sidebar";
+
+// @use "../sass/pages/contact";
+// @use "../sass/pages/home";
+
+// @use "../sass/themes/admin";
+// @use "../sass/themes/theme";
+
+// @use "../sass/utils/functions";
+// @use "../sass/utils/helpers";
+// @use "../sass/utils/mixins";
+// @use "../sass/utils/variables";
+
+// @use "../sass/vendors/bootstrap";
+
+// main.scss
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "layout/header";
+@import "layout/navigation";
+
+@import "layout/footer";

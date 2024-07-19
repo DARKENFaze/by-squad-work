@@ -1,0 +1,41 @@
+@import "../utils/variables";
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+
+  .navbar-brand {
+    @extend .header;
+  }
+
+  .nav-item .nav-link {
+    color: $secondary-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    .nav-icon {
+      color: $primary-color;
+      margin-left: 15px;
+      font-size: 18px;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondary-color;
+      }
+
+      i {
+        vertical-align: middle;
+      }
+    }
+
+    .navbar-toggler {
+      margin-left: 15px;
+    }
+  }
+}
