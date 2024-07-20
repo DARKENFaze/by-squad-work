@@ -1,0 +1,77 @@
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+@use "../base/typography";
+
+section {
+  background-color: var.$color-grey;
+  h1 {
+    @include mxn.family("Roboto", 36px, 400, 50.04px, var.$color-blue);
+    padding: 64px 0 48px;
+  }
+  .d-flex {
+    justify-content: space-between;
+    h3 {
+      @include mxn.family("Roboto", 14px, 400, 19.6px, var.$color-blue);
+    }
+    .h3-flex {
+      gap: 317px;
+      @media (max-width: 500px) {
+        gap: 50px;
+      }
+    }
+  }
+  .img-block-price {
+    padding: 10px 0 20px;
+    border-top: rgba(235, 232, 244, 1) solid 1px;
+    border-bottom: rgba(235, 232, 244, 1) solid 1px;
+    .price-img-one {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .img-price {
+        display: flex;
+        gap: 21px;
+        padding: 10px 0;
+        @media (max-width: 500px) {
+          display: block;
+        }
+        h2 {
+          @include mxn.family("Roboto", 20px, 400, 28px, var.$color-blue);
+        }
+        p {
+          @include mxn.family("Roboto", 14px, 400, 21px, var.$color-blue);
+          max-width: 179px;
+        }
+        h3 {
+          @include mxn.family("Roboto", 16px, 400, 21px, var.$color-blue);
+        }
+      }
+    }
+  }
+  h6 {
+    @include mxn.family("Roboto", 20px, 400, 28px, rgba(78, 77, 147, 1));
+    text-align: right;
+    padding-top: 28px;
+    span {
+      @include mxn.family("Roboto", 24px, 400, 33.6px, var.$color-blue);
+    }
+  }
+  h5 {
+    @include mxn.family("Roboto", 14px, 400, 21px, rgba(78, 77, 147, 1));
+    padding: 12px 0 16px;
+    text-align: right;
+  }
+  .btn {
+    display: flex;
+    justify-content: end;
+    button {
+      @include mxn.family("Roboto", 16px, 400, 24px, white);
+      background-color: var.$color-blue;
+      border: none;
+      display: flex;
+      padding: 16px 32px;
+
+      margin-bottom: 48px;
+    }
+  }
+}
