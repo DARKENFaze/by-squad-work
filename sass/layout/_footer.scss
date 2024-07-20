@@ -1,19 +1,103 @@
 @use "../utils/mixins" as mxn;
-.footer__-flex {
-  @media (max-width: 576px) {
-    flex-direction: column !important;
-  }
-  h4 {
-    @include mxn.family(Clash Display, 16px, 400, 19.68px, white);
-    text-align: left;
-  }
-  p {
-    @include mxn.family(Satoshi, 14px, 400, 18.9px, rgba(255, 255, 255, 1));
-    text-align: left;
-  }
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 58px 0 79px 0;
+  flex-wrap: wrap;
 }
-footer {
-  h2 {
-    @include mxn.family(Satoshi, 14px, 400, 18.9px, white);
+
+.footer-flex > div {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+footer h4,
+footer p {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+}
+
+footer h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.68px;
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+}
+
+.mailing-list-form {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.68px;
+  text-align: left;
+}
+
+.input-btn {
+  width: auto;
+  height: auto;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  cursor: pointer;
+}
+
+#form-input {
+  width: 100%;
+  max-width: 509px;
+  height: 56px;
+  padding: 17px 32px;
+  background: rgba(255, 255, 255, 0.15);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+footer h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    margin-top: 10px;
   }
 }
