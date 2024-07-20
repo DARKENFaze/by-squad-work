@@ -1,0 +1,187 @@
+@use "../utils/mixins" as mxn;
+.home__void {
+  margin-top: 60px;
+  .void__left {
+    @media (max-width: 642px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      padding-top: 60px;
+      @include mxn.family(Clash Display, 32px, 400, 44.8px, white);
+      text-align: left;
+      max-width: 513px;
+      padding-bottom: 41px;
+      @media (max-width: 667px) {
+        padding-bottom: 0px;
+      }
+    }
+    button {
+      padding: 16px 32px;
+      margin-bottom: 196px;
+      background: rgba(249, 249, 249, 0.15);
+      border: none;
+      color: white;
+      @media (max-width: 867px) {
+        margin-bottom: 70px;
+      }
+      @media (max-width: 667px) {
+        margin-bottom: 0px;
+        padding: 16px 100px;
+        transform: translateY(180px);
+      }
+      @media (max-width: 420px) {
+        padding: 16px 60px;
+        transform: translateY(230px);
+      }
+    }
+    p {
+      @include mxn.family(Satoshi, 18px, 400, 27px, white);
+      max-width: 602px;
+      text-align: left;
+      @media (max-width: 667px) {
+        margin-bottom: 90px;
+      }
+    }
+  }
+  .void__right {
+    @media (max-width: 1145px) {
+      width: 490px;
+    }
+    @media (max-width: 867px) {
+      width: 300px;
+    }
+    @media (max-width: 667px) {
+      display: none;
+    }
+  }
+}
+.catd-hand {
+  @include mxn.family(Clash display, 24px, 400, 33.6px, black);
+  padding-top: 120px;
+  padding-bottom: 51px;
+  text-align: center;
+}
+.card-body {
+  h1 {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    @include mxn.family(Clash Display, 20px, 400, 28px, black);
+    text-align: left;
+  }
+  p {
+    @include mxn.family(Clash display, 16px, 400, 24px, black);
+  }
+}
+.img-siize {
+  width: 100%;
+}
+.voidd-S {
+  margin-top: 80px;
+  margin-bottom: 33px;
+  @include mxn.family(Clash Display, 32px, 400, 39.36px, black);
+  text-align: left;
+}
+.ROW__H1 {
+  padding-top: 58px;
+  padding-bottom: 64px;
+  @include mxn.family(Satoshi, 16px, 400, 24px, black);
+  text-align: center;
+}
+.Sign__up {
+  h2 {
+    padding-top: 120px;
+    padding-bottom: 16px;
+    @include mxn.family(Clash Display, 36px, 400, 50.4px, black);
+    text-align: center;
+    margin: 0 auto;
+  }
+  p {
+    @include mxn.family(Satoshi, 16px, 400, 24px, black);
+    text-align: center;
+    max-width: 470px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+  }
+  form {
+    text-align: center;
+    margin-bottom: 119px;
+    input {
+      width: 354px;
+      height: 56px;
+      padding-left: 10px;
+      outline: none;
+      border: none;
+      background-color: rgb(244, 242, 242);
+      @media (max-width: 400px) {
+        width: 200px;
+      }
+    }
+    button {
+      transition: 0.3s;
+      padding: 16px 32px;
+      border: none;
+      background: rgba(42, 37, 75, 1);
+      color: white;
+      &:hover{
+        background-color: red;
+         box-shadow: 0px 0px 10px 1px black;
+         border-radius: 20px;
+         animation-name: but;
+         animation-duration: 2s;
+         animation-fill-mode: backwards;
+           animation-iteration-count: infinite;
+      }
+      @keyframes but {
+        0%{
+          background-color: red;
+           box-shadow: 0px 0px 10px 1px red;
+        }
+        50%{
+          background-color: blue;
+           box-shadow: 0px 0px 10px 1px blue;
+        }
+        100%{
+          background-color: red;
+           box-shadow: 0px 0px 10px 1px red;
+        }
+      }
+    }
+  }
+}
+.fotoer-sraterere {
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  h4 {
+    @include mxn.family(Clash Display, 24px, 400, 33.6px, black);
+    max-width: 514px;
+    text-align: left;
+    padding-bottom: 25px;
+  }
+  p {
+    @include mxn.family(Satoshi, 16px, 400, 21.6px, black);
+    max-width: 536px;
+    text-align: left;
+  }
+  img {
+    width: 520px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+.v_-_-_-_-_i {
+  h5 {
+    padding-top: 24px;
+    padding-bottom: 8px;
+    @include mxn.family(Clash Display, 20px, 400, 28px, black);
+    text-align: left;
+  }
+}
+.big-boxff {
+  @include mxn.family(Clash Display, 32px, 400, 44.8px, black);
+  text-align: left;
+}
