@@ -1,0 +1,158 @@
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+@use "../base/typography";
+
+section {
+  h1 {
+    @include mxn.family("Roboto", 36px, 400, 50.04px, var.$color-blue);
+    max-width: 704px;
+    display: flex;
+    margin: 0 auto;
+    padding: 67px 0 79px;
+    @media (max-width: 995px) {
+      font-size: 25px;
+      text-align: center;
+      line-height: 28px;
+    }
+  }
+}
+aside {
+  .bg-flexx {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    @media (max-width: 995px) {
+      display: block;
+    }
+    .bg-left {
+      h2 {
+        @include mxn.family("Roboto", 24px, 400, 34.04px, var.$color-blue);
+        @media (max-width: 995px) {
+          text-align: center;
+          @media (max-width: 480px) {
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+      }
+      p {
+        @include mxn.family("Roboto", 16px, 400, 22px, var.$color-blue);
+        padding: 25px 0 150px;
+
+        @media (max-width: 1210px) {
+          padding: 25px 0 70px;
+          @media (max-width: 995px) {
+            text-align: center;
+            max-width: 700px;
+            display: flex;
+            margin: 0 auto;
+          }
+        }
+      }
+      button {
+        border: none;
+        @include mxn.family("Roboto", 16px, 400, 22px, var.$color-blue);
+        display: flex;
+        padding: 16px 32px;
+        background-color: var.$color-grey;
+        margin-bottom: 15px;
+        @media (max-width: 995px) {
+          display: flex;
+          margin: 0 auto;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .bg-right {
+      img {
+        @media (max-width: 1210px) {
+          max-width: 400px;
+          @media (max-width: 995px) {
+            display: flex;
+            margin: 0 auto;
+            @media (max-width: 480px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.aside-next {
+  h3 {
+    @include mxn.family("Roboto", 24px, 400, 33px, var.$color-blue);
+    text-align: center;
+    padding: 60px 0 51px;
+  }
+  .box-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    .bOX {
+      h5 {
+        @include mxn.family("Roboto", 20px, 400, 28px, var.$color-blue);
+      }
+      p {
+        @include mxn.family("Roboto", 16px, 400, 24px, var.$color-blue);
+        max-width: 270px;
+      }
+    }
+  }
+}
+.tables-bg-img {
+  background-color: var.$color-grey;
+  height: 444px;
+  display: flex;
+  align-items: center;
+  .container {
+    background-color: white;
+
+    h1 {
+      @include mxn.family("Roboto", 36px, 400, 50.04px, var.$color-blue);
+      padding: 68px 0 16px;
+      text-align: center;
+    }
+    h3 {
+      @include mxn.family("Roboto", 16px, 400, 24px, var.$color-blue);
+      text-align: center;
+      max-width: 470px;
+      display: flex;
+      margin: 0 auto;
+    }
+    .btn {
+      justify-content: center;
+      margin-top: 70px;
+      margin-bottom: 54px;
+
+      .input {
+        @include mxn.family("Roboto", 16px, 400, 22px, var.$color-blue);
+        background-color: var.$color-grey;
+        border: none;
+        display: flex;
+        padding: 17px 150px 17px 32px;
+        @media (max-width: 800px) {
+          padding: 17px 100px 17px 32px;
+          @media (max-width: 510px) {
+            padding: 10px 70px 10px 20px;
+            @media (max-width: 440px) {
+              padding: 10px 40px 10px 10px;
+            }
+          }
+        }
+      }
+      button {
+        border: none;
+        color: white;
+        display: flex;
+        padding: 16px 32px;
+        background-color: var.$color-blue;
+        @media (max-width: 510px) {
+          padding: 10px 20px;
+          @media (max-width: 440px) {
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+  }
+}

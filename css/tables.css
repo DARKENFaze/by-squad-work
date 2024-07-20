@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+section h1 {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50.04px;
+  color: rgb(42, 37, 75);
+  max-width: 704px;
+  display: flex;
+  margin: 0 auto;
+  padding: 67px 0 79px;
+}
+@media (max-width: 995px) {
+  section h1 {
+    font-size: 25px;
+    text-align: center;
+    line-height: 28px;
+  }
+}
+
+aside .bg-flexx {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+@media (max-width: 995px) {
+  aside .bg-flexx {
+    display: block;
+  }
+}
+aside .bg-flexx .bg-left h2 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34.04px;
+  color: rgb(42, 37, 75);
+}
+@media (max-width: 995px) {
+  aside .bg-flexx .bg-left h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 995px) and (max-width: 480px) {
+  aside .bg-flexx .bg-left h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+aside .bg-flexx .bg-left p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(42, 37, 75);
+  padding: 25px 0 150px;
+}
+@media (max-width: 1210px) {
+  aside .bg-flexx .bg-left p {
+    padding: 25px 0 70px;
+  }
+}
+@media (max-width: 1210px) and (max-width: 995px) {
+  aside .bg-flexx .bg-left p {
+    text-align: center;
+    max-width: 700px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+aside .bg-flexx .bg-left button {
+  border: none;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(42, 37, 75);
+  display: flex;
+  padding: 16px 32px;
+  background-color: rgb(249, 249, 249);
+  margin-bottom: 15px;
+}
+@media (max-width: 995px) {
+  aside .bg-flexx .bg-left button {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1210px) {
+  aside .bg-flexx .bg-right img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1210px) and (max-width: 995px) {
+  aside .bg-flexx .bg-right img {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1210px) and (max-width: 995px) and (max-width: 480px) {
+  aside .bg-flexx .bg-right img {
+    width: 100%;
+  }
+}
+
+.aside-next h3 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  color: rgb(42, 37, 75);
+  text-align: center;
+  padding: 60px 0 51px;
+}
+.aside-next .box-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.aside-next .box-grid .bOX h5 {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(42, 37, 75);
+}
+.aside-next .box-grid .bOX p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(42, 37, 75);
+  max-width: 270px;
+}
+
+.tables-bg-img {
+  background-color: rgb(249, 249, 249);
+  height: 444px;
+  display: flex;
+  align-items: center;
+}
+.tables-bg-img .container {
+  background-color: white;
+}
+.tables-bg-img .container h1 {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50.04px;
+  color: rgb(42, 37, 75);
+  padding: 68px 0 16px;
+  text-align: center;
+}
+.tables-bg-img .container h3 {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(42, 37, 75);
+  text-align: center;
+  max-width: 470px;
+  display: flex;
+  margin: 0 auto;
+}
+.tables-bg-img .container .btn {
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 54px;
+}
+.tables-bg-img .container .btn .input {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(42, 37, 75);
+  background-color: rgb(249, 249, 249);
+  border: none;
+  display: flex;
+  padding: 17px 150px 17px 32px;
+}
+@media (max-width: 800px) {
+  .tables-bg-img .container .btn .input {
+    padding: 17px 100px 17px 32px;
+  }
+}
+@media (max-width: 800px) and (max-width: 510px) {
+  .tables-bg-img .container .btn .input {
+    padding: 10px 70px 10px 20px;
+  }
+}
+@media (max-width: 800px) and (max-width: 510px) and (max-width: 440px) {
+  .tables-bg-img .container .btn .input {
+    padding: 10px 40px 10px 10px;
+  }
+}
+.tables-bg-img .container .btn button {
+  border: none;
+  color: white;
+  display: flex;
+  padding: 16px 32px;
+  background-color: rgb(42, 37, 75);
+}
+@media (max-width: 510px) {
+  .tables-bg-img .container .btn button {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 510px) and (max-width: 440px) {
+  .tables-bg-img .container .btn button {
+    padding: 10px 15px;
+  }
+}
